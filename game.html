@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--
+TriviaAttack is a web based trivia game created 
+and written by Tyler Paulley
+9/26/2016
+-->
+
+<html>
+    <head>
+        <script src="javascripts/jquery-3.0.0.js"></script>
+        <script src="javascripts/javascript-game.js"></script>
+        <script src="javascripts/master_json_list.js"></script>
+        <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet-game.css">
+        <link rel="stylesheet" type="text/css" href="stylesheets/csshake.min.css">
+        <link rel="stylesheet" type="text/css" href="stylesheets/animate.css">
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>TriviaAttack</title>
+    </head>
+
+    <body class='container'>
+    <div class="overlay"></div>
+    <Div id="lock">
+    <DIV id="start" class="noselect">
+        <h3 class="before-slide-right" id="title1">
+            <span class="shake-little shake-constant">TRIVIA</span>
+        </h3>
+        <h3 class="before-slide-right" id="title2">
+            <span class="shake-little shake-constant">ATTACK</span>
+        </h3>
+        <h3 class='before-slide-up' id="prompt">PRESS SPACE TO START</h3>
+    </DIV>
+
+    <DIV id="game" class="noselect hidden">
+        <div id="pointsDiv"></div>
+        <div class="card-holder">
+            <div id="card" class="card-start invisible">
+            <div id="questionShakeDiv"><div id='category'></div></div>
+            <br>
+            <div id="answerShakeDiv"><div id='answer'></div></div>
+            </div>
+        </div>
+        <div class="card-holder2">
+            <div id="card2" class="card-start invisible">
+                <div id='div-bottom' class='invisible'>
+                    <span id='score'>Score: 0</span>
+                </div>
+            </div>
+        </div>
+        <div class="card-holder3">
+            <div id="card3" class="card-start invisible">
+            </div>
+        </div>
+    </DIV>
+
+    <DIV id="summary" class="noselect hidden">
+        <table id='scoresTable'>
+            <tr>
+                <td class="tableItemLarge">Final Score:</td>
+                <td style='text-align:right;' class="tableItemLarge" id="finalScore">0</td>
+            </tr>
+            <tr>
+                <td class="tableItem">Correct Answers:</td>
+                <td style='text-align:right;' class="tableItem" id="correct" >0</td>
+            </tr>
+            <tr>
+                <td class="tableItem">Incorrect Answers:</td>
+                <td style='text-align:right;' class="tableItem" id="incorrect">0</td>
+            </tr>
+            <tr>
+                <td class="tableItem">Time Bonus:</td>
+                <td style='text-align:right;' class="tableItem" id="timeBonus">0</td>
+            </tr>
+        </table>
+        <h3 class='before-slide-right' id="playAgain">PRESS SPACE TO REPLAY</h3>
+        <h3 class='invisible' id="ratingHead">Rating</h3>
+        <div class='invisible' id="rating-ring"><h3 id="rating">A</h3></div>
+    </DIV>
+    </Div>
+    </body>
+</html>
+
+
+
+
+
+
+
+
